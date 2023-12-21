@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Checkout</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Payment Checkout</h1>
+    </nav>
+    <div class="main">
+        <h3>Select Payment option here</h3>
+        <div class="payOption">
+            <h3>Your available balance</h3>
+            <hr>
+            <div class="code">
+                <i class="fa-solid fa-plus"></i>
+                <input type="text" placeholder="Enter code" class="enter">
+                <button>Apply</button>
+            </div>
+            <h3>Another payment method</h3>
+            <hr>
+            <div class="methods">
+                <div class="paymentOptions">
+                    <div class="singleOption">
+                        <input type="radio" name="payment" value="cards" id="cards">
+                        <label for="cards" id="label">Credit or Debit Card</label>
+                    </div>
+                    <div class="Option">
+                        <img src="/images/mastercard.jpg" alt="mastercard">
+                        <img src="/images/maestro.png" alt="maestro">
+                        <img src="/images/american.png" alt="american">
+                        <img src="/images/rupay.jpg" alt="rupay">
+                        <img src="/images/visa.png" alt="visa">
+                    </div>
+                    <div class="cardDetail">
+                        <a class="link">Enter card details></a>
+                        <span>Accepts all types of cards</span>
+                    </div>
+                </div>
+
+                <div class="paymentOptions">
+                    <div class="singleOption">
+                        <input type="radio" name="payment" value="netBanking" id="netBanking">
+                        <label for="netBanking">Net Banking</label>
+                    </div>
+                    <div class="Option">
+                        <select name="netBanking" class="states">
+                        <option value="choose">Choose an option</option>
+                        <option value="airtel">Airtel Payments Bank</option>
+                        <option value="Axis">Axis Bank</option>
+                        <option value="HDFC">HDFC Bank</option>
+                        <option value="ICICI">ICICI Bank</option>
+                        <option value="Kotak">Kotak Bank</option>
+                        <option value="State">State Bank of India</option>
+                        <option value="India">Bank of India</option>
+                        <option value="Maharastra">Bank of Maharastra</option>
+                        <option value="Canara">Canara Bank</option>
+                        <option value="Catholic">Catholic Syrian Bank</option>
+                        <option value="Cosmos">Cosmos Bank</option>
+                        <option value="DCF">DCF Bank Ltd</option>
+                        <option value="IDFC">IDFC FIRST Bank</option>
+                        <option value="Indian">Indian Bank</option>
+                        <option value="Karnataka">Karnataka Bank</option>
+                        <option value="Saraswat">Saraswat Bank</option>
+                        <option value="South">South Indian Bank</option>
+                        <option value="Panjab">Panjab National Bank</option>
+                        <option value="Patiala">State Bank of Patiala</option>
+                        <option value="Hyderabad">State Bank of Hyderabad</option>
+                        <option value="United">United Bank of India</option>
+                        <option value="Union">Union Bank of India</option>
+                        <option value="Yes">Yes Bank Ltd</option>
+                        <option value="Syndicate">Syndicate Bank</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="paymentOptions">
+                    <div class="singleOption">
+                        <input type="radio" name="payment" value="upi" id="upi">
+                        <label for="upi">Other UPI Apps</label>
+                        <div class="upiInput">
+                            <label>Please Enter UPI ID</label><br>
+                            <input type="text" placeholder="Enter UPI ID" class="enter">
+                            <button>verify</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentOptions">
+                    <div class="singleOption">
+                        <input type="radio" name="payment" value="emi" id="emi">
+                        <label for="emi">EMI</label>
+                    </div>
+                    <div class="emiOption">
+                        <div class="Option">
+                            <img src="/images/mastercard.jpg" alt="mastercard">
+                            <img src="/images/maestro.png" alt="maestro">
+                            <img src="/images/american.png" alt="american">
+                            <img src="/images/rupay.jpg" alt="rupay">
+                            <img src="/images/visa.png" alt="visa">
+                        </div>
+                        <a class="link emiLink">Enter card details></a>
+                        <span>Accepts all types of cards</span>
+                    </div>
+                </div>
+                <div class="paymentOptions">
+                    <div class="singleOption">
+                        <input type="radio" name="payment" value="cash" id="cash">
+                        <label for="cash">Cash on Delivery/ Pay on Delivery</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+                <button>Use this payment method</button>
+            </div>
+        </div>
+        <div class="note">
+            <p>When your order is placed, we'll send you an e-mail message acknowledging receipt of your order. If you choose to pay using an electronic payment method (credit card, debit card or net banking), you will be directed to your bank's website
+                to complete your payment. Your contract to purchase an item will not be complete until we receive your electronic payment and dispatch your item. If you choose to pay using Pay on Delivery (POD), you can pay using cash/card/net banking
+                when you receive your item.</p>
+        </div>
+
+        <div class="cardDetails">
+            <div class="upperRound">
+                <h4>Enter Card Details</h4>
+            </div>
+            <div class="middle">
+                <label class="nameLabel">Card number: </label>
+                <input type="text" class="enter cardsInput"><br>
+                <label class="nameLabel space">Name: </label>
+                <input type="text" class="enter cardsInput"><br>
+                <label for="date" class="nameLabel">Expiry date: </label>
+                <select name="date" id="date" class="expiryDate">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="date" class="expiryDate">
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                </select>
+            </div>
+
+            <div class="bottomRound">
+                <button id="cancel">cancel</button>
+                <button>Enter card details</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

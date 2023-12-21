@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(white, rgb(228, 225, 225));
+    box-shadow: 0 5px 15px grey;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.main>h3 {
+    color: rgb(224, 93, 42);
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 75%;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+}
+
+.payOption {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.code {
+    margin-bottom: 20px;
+}
+
+.code>i {
+    margin-left: 1rem;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.code>button {
+    padding: 7px 8px 7px 8px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-left: 10px;
+}
+
+.code>button:hover {
+    background-color: lightgray;
+}
+
+.enter {
+    padding: 7px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+.paymentOptions {
+    margin-bottom: 2rem;
+}
+
+.link {
+    font-size: 0.8rem;
+    margin-left: 7.5rem;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+link.link:hover {
+    color: brown;
+    text-decoration: underline solid;
+}
+
+span {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.cardDetail {
+    display: none;
+}
+
+input[type=radio] {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.Option {
+    margin-left: 7rem;
+    margin-top: 0.5rem;
+}
+
+img {
+    width: 2rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.states {
+    width: 20%;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    background-color: rgb(236, 233, 233);
+}
+
+.bottom {
+    width: 100%;
+    margin-left: -1rem;
+}
+
+.bottom>button {
+    margin-left: 2rem;
+}
+
+.note {
+    width: 70%;
+    height: 10rem;
+}
+
+.note>p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+}
+
+.cardDetails {
+    width: 50%;
+    height: 40%;
+    background: white;
+    border: 1px solid lightgray;
+    margin: auto;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+.space {
+    margin-right: 3.2rem;
+}
+
+h4 {
+    padding: 1rem;
+}
+
+.upperRound {
+    width: 100%;
+    height: 20%;
+    background: rgb(236, 231, 231);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bottomRound {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    background-color: yellow;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#cancel {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    margin-left: 25rem;
+}
+
+.middle {
+    padding: 0.6rem;
+}
+
+.middle>input {
+    margin-left: 1rem;
+    border: 1px solid lightgray;
+}
+
+.nameLabel {
+    margin-left: 3.3rem;
+}
+
+.expiryDate {
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+#date {
+    margin-left: 1rem;
+}
+
+.upiInput {
+    margin-left: 3rem;
+    display: none;
+}
+
+.upiInput>input {
+    width: 20%;
+}
+
+.emiOption {
+    display: none;
+    margin-left: -2rem;
+}
+
+@media (max-width: 1024px) {
+    input[type=radio] {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .states {
+        width: 150px;
+    }
+    .cardDetails {
+        width: 70%;
+        height: 25%;
+        margin-top: 25rem;
+    }
+    #cancel {
+        margin-left: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .enter {
+        width: 100px;
+    }
+}
+
+@media (max-width: 667px) {
+    h3 {
+        font-size: 0.9rem;
+    }
+    img {
+        width: 2rem;
+        height: 1.5rem;
+        margin-left: 0.5rem;
+    }
+    .Option {
+        margin-left: 1rem;
+    }
+    select {
+        width: 70%;
+    }
+    .upiInput {
+        margin-left: 1rem;
+    }
+    .upiInput>input {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    .note {
+        width: 100%;
+    }
+    span {
+        display: none;
+    }
+    .emiOption {
+        margin-left: 0.7rem;
+    }
+    .cardDetails {
+        height: 30%;
+        width: 70%;
+        margin-top: 10rem;
+    }
+    .cardsInput {
+        width: 50%;
+        height: 10px;
+    }
+    .nameLabel {
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .expiryDate {
+        width: 20%;
+        font-size: 8px;
+    }
+    #cancel {
+        margin-left: 1rem;
+        width: 2rem;
+    }
+    button {
+        width: 3rem;
+        font-size: 5px;
+    }
+    .space {
+        margin-right: 0;
+        margin-right: 2.2rem;
+    }
+    h4 {
+        font-size: 10px;
+    }
+}
